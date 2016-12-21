@@ -1,0 +1,7 @@
+default: cliser
+
+cliser: client_serv/client.c client_serv/serveur.c
+	gcc -o monclient client_serv/client.c
+	gcc -o monserveur client_serv/serveur.c
+
+clean: rm *.o 
